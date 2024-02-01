@@ -51,22 +51,3 @@ Write a DL regression model using keras with the following steps:
 4. Implement a Tree Parzen Estimator with the [hyperopt](http://hyperopt.github.io/hyperopt/) library.
 
 5. Plot the accuracy vs learning rate and number of layers for each trial.
-
-
-# Regression using QML
-
-1. Generate 5 data points using:
-    ```python
-    def target(x):
-        return np.exp(-(x+1))
-    ```
-
-2. Build a single qubit circuit and apply the following gates: RZ, RY, RZ, RZ, RY.
-
-3. Define a predict function which takes the x value, the parameters of the circuit and circuit object and returns the probability of measuring the vacuum state |0> for the first qubit.
-
-4. Define a MSE loss function which takes the circuit, parameters and x.
-
-5. Train the model using BFGS and a random initialization for the parameters.
-
-6. Plot predictions and target data.
